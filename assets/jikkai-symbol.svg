@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="42%" r="64%">
+    <stop offset="0" stop-color="#191014"/>
+    <stop offset=".72" stop-color="#08090c"/>
+    <stop offset="1" stop-color="#030407"/>
+  </radialGradient>
+  <linearGradient id="fire" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ff8a2c"/>
+    <stop offset=".48" stop-color="#d75b16"/>
+    <stop offset="1" stop-color="#8f2b08"/>
+  </linearGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="7" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<circle cx="512" cy="512" r="468" fill="url(#bg)" stroke="#d75b16" stroke-width="10"/>
+<circle cx="512" cy="512" r="438" fill="none" stroke="#d75b16" stroke-opacity=".48" stroke-width="3"/>
+
+<g fill="url(#fire)" stroke="#6f2408" stroke-width="5" stroke-linejoin="round">
+  <path d="M480 406C360 335 253 206 275 96c93 60 153 137 190 236z"/>
+  <path d="M417 452C283 431 135 345 112 238c111 26 193 83 258 169z"/>
+  <path d="M392 522C251 556 102 534 43 442c116-12 213 18 300 78z"/>
+  <path d="M417 589C305 671 164 709 77 646c99-63 198-82 300-61z"/>
+  <path d="M480 626C422 755 319 852 211 848c64-95 143-155 244-190z"/>
+  <path d="M544 626c58 129 161 226 269 222-64-95-143-155-244-190z"/>
+  <path d="M607 589c112 82 253 120 340 57-99-63-198-82-300-61z"/>
+  <path d="M632 522c141 34 290 12 349-80-116-12-213 18-300 78z"/>
+  <path d="M607 452c134-21 282-107 305-214-111 26-193 83-258 169z"/>
+  <path d="M544 406c120-71 227-200 205-310-93 60-153 137-190 236z"/>
+</g>
+
+<g filter="url(#glow)">
+  <path d="M347 371l102 73 63-37 63 37 102-73-39 152 28 113-101-33-53 98-53-98-101 33 28-113z"
+        fill="url(#fire)" stroke="#5e1c06" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M382 393l69 92-62 29zM642 393l-69 92 62 29z" fill="#090a0d"/>
+  <path d="M407 526l81 20-55 39zM617 526l-81 20 55 39z" fill="#050609"/>
+  <path d="M466 603l46 18 46-18-46 62z" fill="#090a0d"/>
+  <circle cx="443" cy="547" r="8" fill="#a786d8"/>
+  <circle cx="581" cy="547" r="8" fill="#a786d8"/>
+</g>
+
+<text x="512" y="884" text-anchor="middle" fill="#d75b16" font-family="Georgia,serif" font-size="72" letter-spacing="18">JIKKAI</text>
+<text x="512" y="930" text-anchor="middle" fill="#b8adb0" font-family="Segoe UI,sans-serif" font-size="24" letter-spacing="8">8 TAILS</text>
+</svg>
