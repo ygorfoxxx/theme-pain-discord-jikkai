@@ -8,31 +8,344 @@
  * @source https://github.com/ygorfoxxx/theme-pain-discord-jikkai/blob/main/PainJikkai.theme.css
  */
 
-/* =========================================================
-   PAIN JIKKAI — USER SETTINGS
-   Change only the values below to personalize the theme.
-   ========================================================= */
+/* PAIN JIKKAI — USER SETTINGS */
 :root {
-  --pj-accent: #d75b16;
-  --pj-accent-hover: #f07a27;
+  --pj-orange: #d75b16;
+  --pj-orange-hover: #f07a27;
   --pj-rinnegan: #a786d8;
-  --pj-rinnegan-soft: rgba(167, 134, 216, 0.22);
   --pj-akatsuki: #b71832;
-
   --pj-text: #f2eee9;
-  --pj-text-muted: #b8adb0;
+  --pj-muted: #b8adb0;
   --pj-panel: rgba(8, 9, 13, 0.84);
   --pj-panel-strong: rgba(4, 5, 8, 0.94);
-  --pj-panel-soft: rgba(20, 14, 18, 0.72);
   --pj-border: rgba(215, 91, 22, 0.28);
-
   --pj-radius: 14px;
   --pj-blur: 12px;
   --pj-logo-size: 235px;
-  --pj-logo-opacity: 0.11;
-
-  --pj-background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIHZpZXdCb3g9IjAgMCAxOTIwIDEwODAiPgo8ZGVmcz4KICA8bGluZWFyR3JhZGllbnQgaWQ9InNreSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTUxODIzIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ii40OCIgc3RvcC1jb2xvcj0iIzBhMGQxMyIvPgogICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDMwNDA3Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmFkaWFsR3JhZGllbnQgaWQ9InJpbm5lZ2FuIiBjeD0iNTAlIiBjeT0iNTAlIiByPSI1MCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYzhiNmZmIiBzdG9wLW9wYWNpdHk9Ii40MiIvPgogICAgPHN0b3Agb2Zmc2V0PSIuNDIiIHN0b3AtY29sb3I9IiM5YTdhZDAiIHN0b3Atb3BhY2l0eT0iLjE4Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM0YTJmNjQiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvcmFkaWFsR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJjbG9hayIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTcxNzFjIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ii41NSIgc3RvcC1jb2xvcj0iIzA4MDkwYyIvPgogICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDIwMjA0Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImhhaXIiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmOGIyYyIvPgogICAgPHN0b3Agb2Zmc2V0PSIuNDgiIHN0b3AtY29sb3I9IiNkYzU3MTciLz4KICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzhmMmMwYiIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGZpbHRlciBpZD0ic29mdCI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTgiLz48L2ZpbHRlcj4KICA8ZmlsdGVyIGlkPSJnbG93Ij4KICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjYiIHJlc3VsdD0iYiIvPgogICAgPGZlTWVyZ2U+PGZlTWVyZ2VOb2RlIGluPSJiIi8+PGZlTWVyZ2VOb2RlIGluPSJTb3VyY2VHcmFwaGljIi8+PC9mZU1lcmdlPgogIDwvZmlsdGVyPgogIDxwYXR0ZXJuIGlkPSJyYWluIiB3aWR0aD0iNDIiIGhlaWdodD0iNDIiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSgxMykiPgogICAgPHBhdGggZD0iTTQgMHYyMiIgc3Ryb2tlPSIjYmJjOGQ2IiBzdHJva2Utb3BhY2l0eT0iLjEyIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDxwYXRoIGQ9Ik0yNCA5djI4IiBzdHJva2U9IiNiYmM4ZDYiIHN0cm9rZS1vcGFjaXR5PSIuMDciIHN0cm9rZS13aWR0aD0iMS40Ii8+CiAgPC9wYXR0ZXJuPgo8L2RlZnM+Cgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSJ1cmwoI3NreSkiLz4KPGNpcmNsZSBjeD0iNTIwIiBjeT0iNDgwIiByPSI0NzAiIGZpbGw9InVybCgjcmlubmVnYW4pIi8+CjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzljNzljZiIgb3BhY2l0eT0iLjEzIj4KICA8Y2lyY2xlIGN4PSI1MjAiIGN5PSI0ODAiIHI9IjExMCIgc3Ryb2tlLXdpZHRoPSI3Ii8+CiAgPGNpcmNsZSBjeD0iNTIwIiBjeT0iNDgwIiByPSIyMDUiIHN0cm9rZS13aWR0aD0iNiIvPgogIDxjaXJjbGUgY3g9IjUyMCIgY3k9IjQ4MCIgcj0iMzAwIiBzdHJva2Utd2lkdGg9IjUiLz4KICA8Y2lyY2xlIGN4PSI1MjAiIGN5PSI0ODAiIHI9IjM5NSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CjwvZz4KCiA8IS0tIGRpc3RhbnQgaGlkZGVuLXJhaW4gc2t5bGluZSAtLT4KPGcgZmlsbD0iIzEwMTQxYiIgb3BhY2l0eT0iLjg1Ij4KICA8cGF0aCBkPSJNMCA3NjBoMTUwdj0xNzBoNjJ2MTcwaDEyNXYtMjQ1aDkwdjI0NWg3NHYtMTI1aDY4djEyNWgxMzV2LTIxNWgxMDV2MjE1aDkwdi0xNDVoNjd2MTQ1aDE0MHYtMjYwaDEzMHYyNjBoODJ2LTE4NWg5M3YxODVoMTYwdi0yMzBoMTE2djIzMGg4NHYtMTUwaDg5djE1MGgxODF2MzIwSDB6Ii8+CjwvZz4KPGcgc3Ryb2tlPSIjMjUyYzM4IiBzdHJva2Utd2lkdGg9IjUiIG9wYWNpdHk9Ii42Ij4KICA8cGF0aCBkPSJNMTgxIDU5MHYtMTUwbTIwMCA3NXYtMTg1bTc1MyAxNzB2LTIxMG0xNzYgMjI1di0xNzBtMjg3IDE4NXYtMjIwIi8+CiAgPHBhdGggZD0iTTE1MCA1OTBoNjJtMTI1LTc1aDkwbTY2Ni0xNWgxMzBtNDAgMTVoOTNtMjQxIDE1aDExNiIvPgo8L2c+Cgo8IS0tIFBhaW4taW5zcGlyZWQgb3JpZ2luYWwgZmlndXJlIC0tPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjEwIDk1KSI+CiAgPGVsbGlwc2UgY3g9IjM2MCIgY3k9IjgxNSIgcng9IjM3MCIgcnk9Ijk1IiBmaWxsPSIjMDAwIiBvcGFjaXR5PSIuNjIiIGZpbHRlcj0idXJsKCNzb2Z0KSIvPgogIDwhLS0gY2xvYWsgLS0+CiAgPHBhdGggZD0iTTEyMiA1MTAgUTQyIDY1MCAzMCA5NTAgSDY4MiBRNjY1IDY1MCA1OTIgNTEwIFE1MDggNDUwIDQ0NyA0MzAgSDI2MyBRMTkwIDQ1MCAxMjIgNTEwWiIKICAgICAgICBmaWxsPSJ1cmwoI2Nsb2FrKSIgc3Ryb2tlPSIjYzg0YzFhIiBzdHJva2Utb3BhY2l0eT0iLjM4IiBzdHJva2Utd2lkdGg9IjUiLz4KICA8cGF0aCBkPSJNMjU0IDQzMCBRMzQ3IDUxMiA0NTggNDMwIEw1MTUgNTIwIFEzNjAgNjE1IDE5NiA1MjBaIgogICAgICAgIGZpbGw9IiMwOTBhMGUiIHN0cm9rZT0iI2UzNmIyNCIgc3Ryb2tlLW9wYWNpdHk9Ii40IiBzdHJva2Utd2lkdGg9IjQiLz4KICA8cGF0aCBkPSJNMzM4IDQ3NXY0NzIiIHN0cm9rZT0iI2QxNWIyMSIgc3Ryb2tlLW9wYWNpdHk9Ii40IiBzdHJva2Utd2lkdGg9IjUiLz4KCiAgPCEtLSByZWQgY2xvdWQgbW90aWZzIC0tPgogIDxnIGZpbGw9IiM5OTE3MmEiIHN0cm9rZT0iI2U2ZDNjNyIgc3Ryb2tlLW9wYWNpdHk9Ii41IiBzdHJva2Utd2lkdGg9IjQiPgogICAgPHBhdGggZD0iTTE0NSA3MTBjLTM1LTY2IDUwLTExOCAxMDEtNzEgMTMtNTIgOTAtNDUgOTUgNyA2MS0xOCA5MSA1NiA0NyA5MEgxODJjLTIwIDAtMzAtMTAtMzctMjZ6Ii8+CiAgICA8cGF0aCBkPSJNNDMwIDgwNWMtMjUtNTAgMzktOTIgODAtNTUgMTEtNDAgNzAtMzUgNzUgNyA0Ni0xNSA3MiA0MyAzNiA3Mkg0NThjLTE2IDAtMjMtOC0yOC0yNHoiLz4KICA8L2c+CgogIDwhLS0gbmVjayBhbmQgZmFjZSAtLT4KICA8cGF0aCBkPSJNMjkyIDM5N2gxMzZsMjIgODhIMjcxeiIgZmlsbD0iI2I5OGQ2ZCIvPgogIDxwYXRoIGQ9Ik0yMzYgMTcyIFEzNTIgODIgNDc0IDE3NiBMNDUxIDM3NyBRNDA4IDQ0MyAzNTMgNDQ5IFEyOTAgNDM5IDI1MiAzNzdaIgogICAgICAgIGZpbGw9IiNjODlhNzgiIHN0cm9rZT0iIzZlNDAyZCIgc3Ryb2tlLXdpZHRoPSI0Ii8+CgogIDwhLS0gaGFpciAtLT4KICA8ZyBmaWxsPSJ1cmwoI2hhaXIpIiBzdHJva2U9IiM2MTIwMDYiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CiAgICA8cGF0aCBkPSJNMjI4IDIwNyAxODIgMTE3IDI1OSAxNDAgMjQ0IDU1IDMxMSAxMTIgMzMwIDE4IDM3MSAxMDUgNDE5IDE5IDQzMSAxMTUgNTAzIDU3IDQ3NSAxNDcgNTUyIDEyNCA0NzggMjE4IDQ0MCAxNzQgMzk3IDE1MSAzNDUgMTM5IDI5MSAxNTNaIi8+CiAgICA8cGF0aCBkPSJNMjQ0IDE4NyAxODAgMjI0IDIzOCAyMzh6Ii8+CiAgICA8cGF0aCBkPSJNNDY1IDE4NyA1MzYgMjI5IDQ3MCAyNDF6Ii8+CiAgPC9nPgoKICA8IS0tIGhlYWRiYW5kIC0tPgogIDxwYXRoIGQ9Ik0yMzYgMTcycTExNi01NSAyMzggNGwtOCA1MHEtMTE1LTQ1LTIyMC0yeiIgZmlsbD0iIzE1MTcxZCIgc3Ryb2tlPSIjNGI1MDViIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8cmVjdCB4PSIzMjAiIHk9IjE2MCIgd2lkdGg9Ijc1IiBoZWlnaHQ9IjQ4IiByeD0iOCIgZmlsbD0iIzc3N2Q4OSIgc3Ryb2tlPSIjMjMyNjJkIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8cGF0aCBkPSJNMzMyIDE4NGg1MSIgc3Ryb2tlPSIjMzAzNDNjIiBzdHJva2Utd2lkdGg9IjQiLz4KCiAgPCEtLSBleWVzIC0tPgogIDxnIGZpbHRlcj0idXJsKCNnbG93KSI+CiAgICA8ZWxsaXBzZSBjeD0iMzAyIiBjeT0iMjgyIiByeD0iNDIiIHJ5PSIyMyIgZmlsbD0iI2U4ZDZmYiIvPgogICAgPGVsbGlwc2UgY3g9IjQxMCIgY3k9IjI4MiIgcng9IjQyIiByeT0iMjMiIGZpbGw9IiNlOGQ2ZmIiLz4KICAgIDxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdjNTVhZCIgc3Ryb2tlLXdpZHRoPSI0Ij4KICAgICAgPGVsbGlwc2UgY3g9IjMwMiIgY3k9IjI4MiIgcng9IjMxIiByeT0iMTciLz4KICAgICAgPGVsbGlwc2UgY3g9IjMwMiIgY3k9IjI4MiIgcng9IjIxIiByeT0iMTIiLz4KICAgICAgPGVsbGlwc2UgY3g9IjQxMCIgY3k9IjI4MiIgcng9IjMxIiByeT0iMTciLz4KICAgICAgPGVsbGlwc2UgY3g9IjQxMCIgY3k9IjI4MiIgcng9IjIxIiByeT0iMTIiLz4KICAgIDwvZz4KICAgIDxjaXJjbGUgY3g9IjMwMiIgY3k9IjI4MiIgcj0iNyIgZmlsbD0iIzE4MTMxZSIvPgogICAgPGNpcmNsZSBjeD0iNDEwIiBjeT0iMjgyIiByPSI3IiBmaWxsPSIjMTgxMzFlIi8+CiAgPC9nPgoKICA8IS0tIGZhY2lhbCBkZXRhaWxzIGFuZCBwaWVyY2luZ3MgLS0+CiAgPHBhdGggZD0iTTM1NCAyODYgMzM5IDM0NCAzNjUgMzUwIiBmaWxsPSJub25lIiBzdHJva2U9IiM3NDRhMzYiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxwYXRoIGQ9Ik0zMTMgMzgzcTQyIDIzIDg1IDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZiMzUyOSIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgPGcgZmlsbD0iIzExMTMxOSIgc3Ryb2tlPSIjMzQzODQ0IiBzdHJva2Utd2lkdGg9IjIiPgogICAgPGNpcmNsZSBjeD0iMjg1IiBjeT0iMzU2IiByPSI3Ii8+PGNpcmNsZSBjeD0iMzAzIiBjeT0iMzY2IiByPSI3Ii8+PGNpcmNsZSBjeD0iMzIxIiBjeT0iMzczIiByPSI3Ii8+CiAgICA8Y2lyY2xlIGN4PSI0MjUiIGN5PSIzNTYiIHI9IjciLz48Y2lyY2xlIGN4PSI0MDciIGN5PSIzNjYiIHI9IjciLz48Y2lyY2xlIGN4PSIzODkiIGN5PSIzNzMiIHI9IjciLz4KICAgIDxjaXJjbGUgY3g9IjM1NCIgY3k9IjQxNSIgcj0iNyIvPgogIDwvZz4KICA8ZyBzdHJva2U9IiMyMDIzMmEiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxwYXRoIGQ9Ik0yNjAgMzE4bC0yOCA4bTI0Ny04IDI4IDgiLz4KICAgIDxwYXRoIGQ9Ik0zNTQgNDMwdjI4Ii8+CiAgPC9nPgo8L2c+Cgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSJ1cmwoI3JhaW4pIi8+CjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2QyNWIxNiIgc3Ryb2tlLW9wYWNpdHk9Ii4xNiIgc3Ryb2tlLXdpZHRoPSI4Ii8+Cjwvc3ZnPg==");
-  --pj-jikkai-symbol: url("data:image/webp;base64,UklGRtg...TRUNCATED_FOR_TOOL_CALL...");
+  --pj-logo-opacity: 0.12;
+  --pj-background: url("https://raw.githubusercontent.com/ygorfoxxx/theme-pain-discord-jikkai/main/assets/pain-background.svg");
+  --pj-logo: url("https://raw.githubusercontent.com/ygorfoxxx/theme-pain-discord-jikkai/main/assets/jikkai-symbol.svg");
 }
 
-/* Full theme CSS omitted in tool call due payload size; local file is ready and will be uploaded in a subsequent complete update. */
+.theme-dark,
+.theme-light {
+  color-scheme: dark;
+  --background-base-lowest: rgba(3, 4, 7, 0.95);
+  --background-base-lower: rgba(6, 7, 10, 0.90);
+  --background-base-low: rgba(10, 10, 14, 0.84);
+  --background-surface-low: rgba(15, 13, 17, 0.78);
+  --background-surface-high: rgba(27, 20, 25, 0.88);
+  --background-surface-higher: rgba(37, 27, 33, 0.94);
+  --background-primary: rgba(8, 9, 13, 0.82);
+  --background-secondary: rgba(6, 7, 10, 0.88);
+  --background-secondary-alt: rgba(4, 5, 8, 0.94);
+  --background-tertiary: rgba(3, 4, 7, 0.95);
+  --background-floating: rgba(7, 7, 11, 0.98);
+  --background-modifier-hover: rgba(215, 91, 22, 0.10);
+  --background-modifier-active: rgba(215, 91, 22, 0.16);
+  --background-modifier-selected: rgba(167, 134, 216, 0.18);
+  --background-modifier-accent: rgba(215, 91, 22, 0.18);
+  --text-normal: var(--pj-text);
+  --text-primary: var(--pj-text);
+  --text-secondary: #d3c9c8;
+  --text-muted: var(--pj-muted);
+  --interactive-normal: #c5bab9;
+  --interactive-hover: #fff;
+  --interactive-active: #fff;
+  --interactive-muted: #71686b;
+  --brand-500: var(--pj-orange);
+  --brand-560: #bd4911;
+  --brand-600: #a53e0c;
+  --brand-experiment: var(--pj-orange);
+  --control-brand-foreground: var(--pj-orange);
+  --status-danger: var(--pj-akatsuki);
+  --focus-primary: var(--pj-rinnegan);
+  --mention-foreground: #f0dfff;
+  --mention-background: rgba(167, 134, 216, 0.14);
+}
+
+html,
+body,
+#app-mount {
+  min-height: 100%;
+  background: #030407 !important;
+}
+
+body {
+  font-family: Inter, "gg sans", "Segoe UI", system-ui, sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(2, 3, 5, 0.82), rgba(2, 3, 5, 0.48)),
+    linear-gradient(180deg, rgba(7, 5, 9, 0.10), rgba(2, 3, 5, 0.62)),
+    var(--pj-background) center / cover no-repeat;
+}
+
+#app-mount {
+  position: relative;
+  z-index: 1;
+  background: transparent !important;
+}
+
+#app-mount::after {
+  content: "";
+  position: fixed;
+  right: 24px;
+  bottom: 18px;
+  width: var(--pj-logo-size);
+  aspect-ratio: 1;
+  z-index: 9999;
+  pointer-events: none;
+  background: var(--pj-logo) center / contain no-repeat;
+  opacity: var(--pj-logo-opacity);
+  filter: drop-shadow(0 0 20px rgba(215, 91, 22, 0.18));
+}
+
+[class*="appMount_"],
+[class*="app_"],
+[class*="bg_"],
+[class*="layers_"],
+[class*="base_"],
+[class*="content_"],
+[class*="chatContent_"] {
+  background: transparent !important;
+}
+
+[class*="guilds_"] {
+  background: linear-gradient(180deg, rgba(3, 4, 7, 0.98), rgba(8, 6, 10, 0.94)) !important;
+  border-right: 1px solid rgba(167, 134, 216, 0.16);
+  box-shadow: 8px 0 28px rgba(0, 0, 0, 0.25);
+}
+
+[class*="sidebar_"],
+[class*="privateChannels_"] {
+  background: linear-gradient(180deg, var(--pj-panel-strong), var(--pj-panel)) !important;
+  border-right: 1px solid var(--pj-border);
+  backdrop-filter: blur(var(--pj-blur));
+}
+
+[class*="chat_"],
+[class*="membersWrap_"],
+[class*="members_"] {
+  background: rgba(8, 9, 13, 0.68) !important;
+  backdrop-filter: blur(8px);
+}
+
+[class*="membersWrap_"] {
+  border-left: 1px solid rgba(167, 134, 216, 0.14);
+}
+
+[class*="panels_"] {
+  margin: 0 8px 8px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(25, 17, 22, 0.96), rgba(6, 7, 10, 0.96)) !important;
+  border: 1px solid var(--pj-border);
+  border-radius: var(--pj-radius);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.38);
+}
+
+[class*="title_"],
+[class*="header_"][class*="themed_"] {
+  background: rgba(5, 6, 9, 0.86) !important;
+  border-bottom: 1px solid var(--pj-border);
+  backdrop-filter: blur(var(--pj-blur));
+}
+
+[class*="scroller_"] {
+  scrollbar-color: rgba(215, 91, 22, 0.55) transparent;
+}
+
+[class*="tutorialContainer_"] [class*="childWrapper_"] {
+  color: #fff !important;
+  background: radial-gradient(circle,
+    #17111d 0 18%,
+    #9e7ed0 20% 24%,
+    #17111d 26% 38%,
+    #9e7ed0 40% 44%,
+    #17111d 46% 100%) !important;
+  box-shadow: 0 0 0 1px rgba(167, 134, 216, 0.35), 0 0 26px rgba(167, 134, 216, 0.18);
+}
+
+[class*="modeSelected_"] [class*="link_"],
+[class*="interactiveSelected_"] {
+  color: #fff !important;
+  background: linear-gradient(90deg, rgba(215, 91, 22, 0.20), rgba(167, 134, 216, 0.12)) !important;
+  box-shadow: inset 3px 0 0 var(--pj-orange);
+}
+
+[class*="modeUnreadImportant_"] [class*="name_"],
+[class*="modeUnreadImportant_"] [class*="icon_"] {
+  color: #fff !important;
+  text-shadow: 0 0 14px rgba(167, 134, 216, 0.42);
+}
+
+[class*="unread_"] {
+  background: var(--pj-rinnegan) !important;
+  box-shadow: 0 0 10px rgba(167, 134, 216, 0.65);
+}
+
+[class*="numberBadge_"],
+[class*="newMessagesBar_"] {
+  background: linear-gradient(135deg, var(--pj-akatsuki), #7d1025) !important;
+}
+
+[class*="message_"] {
+  border-left: 2px solid transparent;
+  border-radius: 0 10px 10px 0;
+  transition: background-color 140ms ease, border-color 140ms ease;
+}
+
+[class*="message_"]:hover,
+[class*="message_"][class*="selected_"] {
+  background: linear-gradient(90deg, rgba(215, 91, 22, 0.08), rgba(167, 134, 216, 0.05)) !important;
+  border-left-color: rgba(215, 91, 22, 0.72);
+}
+
+[class*="mentioned_"] {
+  background: linear-gradient(90deg, rgba(167, 134, 216, 0.16), rgba(183, 24, 50, 0.07)) !important;
+  border-left-color: var(--pj-rinnegan) !important;
+}
+
+[class*="mentioned_"]::before {
+  background: var(--pj-rinnegan) !important;
+}
+
+[class*="replying_"] {
+  background: rgba(215, 91, 22, 0.09) !important;
+}
+
+[class*="embedFull_"] {
+  background: rgba(9, 9, 13, 0.82) !important;
+  border-left-color: var(--pj-orange) !important;
+  border-radius: 0 var(--pj-radius) var(--pj-radius) 0;
+}
+
+[class*="reaction_"] {
+  background: rgba(14, 12, 17, 0.86) !important;
+  border: 1px solid rgba(167, 134, 216, 0.18) !important;
+}
+
+[class*="reaction_"]:hover,
+[class*="reaction_"][class*="reactionMe_"] {
+  background: rgba(167, 134, 216, 0.18) !important;
+  border-color: var(--pj-rinnegan) !important;
+}
+
+[class*="form_"] {
+  background: transparent !important;
+}
+
+[class*="channelTextArea_"],
+[class*="scrollableContainer_"],
+[class*="input_"],
+textarea {
+  background: rgba(4, 5, 8, 0.92) !important;
+  border: 1px solid rgba(215, 91, 22, 0.24) !important;
+  border-radius: var(--pj-radius) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+[class*="channelTextArea_"]:focus-within,
+[class*="input_"]:focus,
+textarea:focus {
+  border-color: rgba(167, 134, 216, 0.72) !important;
+  box-shadow: 0 0 0 2px rgba(167, 134, 216, 0.12);
+}
+
+button[class*="lookFilled_"][class*="colorBrand_"],
+[class*="button_"][class*="colorBrand_"] {
+  background: linear-gradient(135deg, var(--pj-orange), #a7390d) !important;
+  border: 1px solid rgba(255, 156, 83, 0.22);
+  box-shadow: 0 8px 20px rgba(123, 38, 5, 0.24);
+}
+
+button[class*="lookFilled_"][class*="colorBrand_"]:hover,
+[class*="button_"][class*="colorBrand_"]:hover {
+  background: linear-gradient(135deg, var(--pj-orange-hover), #c84912) !important;
+}
+
+a,
+[class*="anchor_"] {
+  color: #c7adf2;
+}
+
+[class*="tabBarItem_"][class*="selected_"],
+[class*="item_"][class*="selected_"] {
+  color: #fff !important;
+}
+
+[class*="menu_"],
+[class*="userPopout_"],
+[class*="messagesPopoutWrap_"],
+[class*="browser_"],
+[class*="root_"][class*="modal_"],
+[class*="contentWrapper_"] {
+  background: rgba(6, 7, 10, 0.97) !important;
+  border: 1px solid var(--pj-border) !important;
+  border-radius: var(--pj-radius) !important;
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.58) !important;
+  backdrop-filter: blur(var(--pj-blur));
+}
+
+[class*="menu_"] [class*="item_"]:hover,
+[class*="menu_"] [class*="focused_"] {
+  background: linear-gradient(90deg, rgba(215, 91, 22, 0.16), rgba(167, 134, 216, 0.10)) !important;
+}
+
+[class*="standardSidebarView_"],
+[class*="contentRegion_"],
+[class*="sidebarRegion_"] {
+  background: rgba(5, 6, 9, 0.92) !important;
+}
+
+[class*="side_"] [class*="item_"][class*="selected_"] {
+  background: linear-gradient(90deg, rgba(215, 91, 22, 0.20), rgba(167, 134, 216, 0.10)) !important;
+  box-shadow: inset 3px 0 0 var(--pj-orange);
+}
+
+[class*="role_"] {
+  background: rgba(16, 12, 17, 0.84) !important;
+  border-color: rgba(167, 134, 216, 0.22) !important;
+}
+
+:focus-visible {
+  outline: 2px solid var(--pj-rinnegan) !important;
+  outline-offset: 2px;
+}
+
+@media (max-width: 1100px) {
+  #app-mount::after {
+    --pj-logo-size: 175px;
+    --pj-logo-opacity: 0.08;
+    right: 14px;
+    bottom: 12px;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  [class*="sidebar_"],
+  [class*="chat_"],
+  [class*="membersWrap_"],
+  [class*="menu_"],
+  [class*="userPopout_"] {
+    backdrop-filter: none !important;
+    background: #08090d !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
