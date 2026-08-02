@@ -2,7 +2,7 @@
  * @name Pain JIKKAI
  * @author Ygor Fox
  * @description A complete dark Discord theme inspired by Pain, the Rinnegan, the Akatsuki and the JIKKAI organization.
- * @version 1.0.0
+ * @version 1.0.1
  * @authorLink https://github.com/ygorfoxxx
  * @website https://github.com/ygorfoxxx/theme-pain-discord-jikkai
  * @source https://github.com/ygorfoxxx/theme-pain-discord-jikkai/blob/main/PainJikkai.theme.css
@@ -22,8 +22,8 @@
   --pj-radius: 14px;
   --pj-blur: 12px;
   --pj-logo-size: 235px;
-  --pj-logo-opacity: 0.12;
-  --pj-background: url("https://raw.githubusercontent.com/ygorfoxxx/theme-pain-discord-jikkai/main/assets/pain-background.svg");
+  --pj-logo-opacity: 0.16;
+  --pj-background: url("https://images8.alphacoders.com/124/thumb-1920-1249998.jpg");
   --pj-logo: url("https://raw.githubusercontent.com/ygorfoxxx/theme-pain-discord-jikkai/main/assets/jikkai-symbol.svg");
 }
 
@@ -82,8 +82,8 @@ body::before {
   z-index: 0;
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(2, 3, 5, 0.82), rgba(2, 3, 5, 0.48)),
-    linear-gradient(180deg, rgba(7, 5, 9, 0.10), rgba(2, 3, 5, 0.62)),
+    linear-gradient(90deg, rgba(2, 3, 5, 0.76), rgba(2, 3, 5, 0.34)),
+    linear-gradient(180deg, rgba(7, 5, 9, 0.08), rgba(2, 3, 5, 0.56)),
     var(--pj-background) center / cover no-repeat;
 }
 
@@ -104,7 +104,7 @@ body::before {
   pointer-events: none;
   background: var(--pj-logo) center / contain no-repeat;
   opacity: var(--pj-logo-opacity);
-  filter: drop-shadow(0 0 20px rgba(215, 91, 22, 0.18));
+  filter: drop-shadow(0 0 20px rgba(215, 91, 22, 0.28));
 }
 
 [class*="appMount_"],
@@ -322,7 +322,7 @@ a,
 @media (max-width: 1100px) {
   #app-mount::after {
     --pj-logo-size: 175px;
-    --pj-logo-opacity: 0.08;
+    --pj-logo-opacity: 0.10;
     right: 14px;
     bottom: 12px;
   }
